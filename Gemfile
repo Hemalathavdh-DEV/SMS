@@ -38,5 +38,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # mysql database
-gem "mysql2", "~> 0.5.0"
+gem "mysql2", "~> 0.5.0", group: :development
+gem 'pg', '~> 1.5', '>= 1.5.4', group: :production
+gem 'rails_12factor', group: :production
 gem 'dotenv-rails'
