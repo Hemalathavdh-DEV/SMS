@@ -33,5 +33,3 @@
 # Ignore environment variable files
 .env
 
-# Ignore Gemfile.lock
-/Gemfile.lock
