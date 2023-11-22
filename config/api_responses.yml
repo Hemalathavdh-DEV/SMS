@@ -1,0 +1,20 @@
+api_responses:
+  method_not_allowed:
+    message: "Request Method is not allowed"
+  unauthenticated:
+    message: "Authentication failed"
+  failure: "failure"
+  param_missing:
+    message: "missing"
+  param_invalid:
+    message: "invalid"
+  param_not_found:
+    message: "parameter not found"
+  unknown:
+    message: "unknown failure"
+  valid:
+    message: "sms ok"
+  already_stopped:
+    message: "The parameters are already stopped"
+  sms_blocked:
+    message: "sms from <%= from %> to <%= to %> blocked by STOP request"

@@ -46,3 +46,6 @@ gem 'dotenv-rails'
 
 # debugger
 gem 'pry'
+
+# redis
+gem 'redis', '~> 5.0', '>= 5.0.6'

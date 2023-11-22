@@ -4,4 +4,10 @@ class PhoneNumber < ApplicationRecord
 
   #Associations
   belongs_to :account
+
+  private
+
+  def self.account_phone_numbers
+    pluck(:number)
+  end
 end
