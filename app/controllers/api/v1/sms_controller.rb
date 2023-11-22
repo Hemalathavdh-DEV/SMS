@@ -1,7 +1,7 @@
 class Api::V1::SmsController < Api::V1::ApplicationController
   before_action :authenticate_action, :verify_input
-  before_action :verify_account_phone_number, only: :inbound_sms
-  before_action :check_rate_limit, :verify_cache_key_value_pairs, :verify_account_phone_number, only: [:outbound_sms]
+  before_action :check_rate_limit, :verify_cache_key_value_pairs, only: [:outbound_sms]
+  before_action :verify_account_phone_number
 
   def inbound_sms
     processed_status = @account_service.process_text
@@ -14,16 +14,6 @@ class Api::V1::SmsController < Api::V1::ApplicationController
   end
 
   private
-
-  def initialize_account_service
-    @account_service = AccountService.new(@current_account, params)
-  end
-
-  def initialize_input_validation_service
-    input_validation_service = InputValidationService.new(params)
-    @params_missing = input_validation_service.validate_required_input_params
-    @params_invalid = input_validation_service.validate_input_params
-  end
 
   def verify_input
     initialize_input_validation_service

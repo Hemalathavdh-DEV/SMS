@@ -9,8 +9,6 @@ class Api::V1::ApplicationController < ActionController::API
   #Response Format
   include ApiResponseOutput
 
-  @@api_responses = API_RESPONSES["api_responses"]
-
   def method_not_allowed
     render_method_not_allowed
   end
@@ -28,5 +26,15 @@ class Api::V1::ApplicationController < ActionController::API
         @current_account = account
       end
     end
+  end
+
+   def initialize_account_service
+    @account_service = AccountService.new(@current_account, params)
+  end
+
+  def initialize_input_validation_service
+    input_validation_service = InputValidationService.new(params)
+    @params_missing = input_validation_service.validate_required_input_params
+    @params_invalid = input_validation_service.validate_input_params
   end
 end
