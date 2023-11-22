@@ -25,5 +25,5 @@ development:
 production:
   pool: 5
   timeout: 5000
-  adapter: postgresql
+  adapter: mysql2
   database: db/production.sqlite3
