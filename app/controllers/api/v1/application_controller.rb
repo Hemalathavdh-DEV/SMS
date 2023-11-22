@@ -19,7 +19,7 @@ class Api::V1::ApplicationController < ActionController::API
     authenticate_with_http_basic do |username, password|
       account = Account.find_by(username: username)
       # If the user is not found or authentication fails, return a 403 Forbidden response.
-      unless account && account.authenticate(password)
+      unless account && account.authenticate_auth_id(password).present?
         render_unauthenticated
         return
       else

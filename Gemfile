@@ -47,10 +47,15 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+#For production Heroku
 gem 'pg', '~> 1.5', '>= 1.5.4', group: :production
 
 # env
 gem 'dotenv-rails'
+
+#Secure passwords
+gem 'bcrypt'
 
 # debugger
 gem 'pry'
