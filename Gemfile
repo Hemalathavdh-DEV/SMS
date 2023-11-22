@@ -32,6 +32,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 5.0'
   gem 'factory_bot', '6.1.0'
   gem 'factory_bot_rails', '6.1.0'
+  gem 'capybara'
 
   # database
   gem "mysql2", "~> 0.5.0"
@@ -56,3 +57,6 @@ gem 'pry'
 
 # redis
 gem 'redis', '~> 5.0', '>= 5.0.6'
+
+#CORS -  Defines which website can interact with your application's API
+gem 'rack-cors'
