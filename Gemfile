@@ -34,9 +34,6 @@ group :development, :test do
   gem 'factory_bot_rails', '6.1.0'
   gem 'capybara'
 
-  # database
-  gem "mysql2", "~> 0.5.0"
-
 end
 
 group :development do
@@ -48,8 +45,8 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-#For production Heroku
-gem 'pg', '~> 1.5', '>= 1.5.4', group: :production
+# database
+ gem "mysql2", "~> 0.5.0"
 
 # env
 gem 'dotenv-rails'
