@@ -3,8 +3,6 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
-
 *Application setup:
 
 	Technology stack
@@ -24,68 +22,69 @@ Things you may want to cover:
 
 
 * System dependencies
-    Install Mysql and Redis
+    - Install Mysql and Redis
 
+* GitHub repo - https://github.com/Hemalathavdh-DEV/SMS
 
 * Deployment instructions
-1)   Install the Heroku CLI
+    1)   Install the Heroku CLI
         
-    Push Your updated branch to heroku
-        $ heroku login
-        $ git push heroku master
+        Push Your updated branch to heroku
+            $ heroku login
+            $ git push heroku master
 
-    Do Migrations
-        $ heroku run rake db:migrate
+        Do Migrations
+            $ heroku run rake db:migrate
 
-2) Or Select Deployment method as Github
-    Manual Deploy - Connect your repo, select the branch and click deploy.
+    2) Or Select Deployment method as Github
+        Manual Deploy - Connect your repo, select the branch and click deploy.
 
 
 * Heroku clone instructions
-    Install the Heroku CLI
-    If you haven't already, log in to your Heroku account and follow the prompts to create a new SSH public key.
+    - Install the Heroku CLI
+    - If you haven't already, log in to your Heroku account and follow the prompts to create a new SSH public key.
         $ heroku login
   
-    Clone the repository
+    - Clone the repository
 
-    Use Git to clone boiling-waters-33170's source code to your local machine.
+    - Use Git to clone boiling-waters-33170's source code to your local machine.
 
         $ heroku git:clone -a boiling-waters-33170 
         $ cd boiling-waters-33170
 
-    Deploy your changes
+    - Deploy your changes
 
-    Make some changes to the code you just cloned and deploy them to Heroku using Git.
+    - Make some changes to the code you just cloned and deploy them to Heroku using Git.
 
         $ git add .
         $ git commit -am "make it better"
         $ git push heroku master
 
 * Heroku Server Details
-    URL: https://boiling-waters-33170-b06f2682c931.herokuapp.com/
-    Branch Deployed: master
-    DB used in Heroku: JawsDB MySQL
-    Redis: RedisCloud
+    - URL: https://boiling-waters-33170-b06f2682c931.herokuapp.com/
+    - Branch Deployed: master
+    - DB used in Heroku: JawsDB MySQL
+    - Redis: RedisCloud
 
-* Testing - Application and API details.
+* Testing: Application and API details.
     Built API endpoints:
-    1) Inbound SMS: /api/v1/sms/inbound
-    2) Outbound SMS: /api/v1/sms/outbound
+        Inbound SMS: "/api/v1/sms/inbound"
+        Outbound SMS: "/api/v1/sms/outbound"
     DB records:
-    Account: <username> <password>
-            - hemalatha <password>
-            - hema <password>
-        Password shared in email.
-    Phone numbers: <account username> <phone numbers>
-         Phone Number details shared in email.
+        * Account: <username> <password>
+                - hemalatha <password>
+                - hema <password>
+            Password shared in email.
+        * Phone numbers: <account username> <phone numbers>
+            Phone Number details shared in email.
 
-    Note: you can use the above db record values to test the api endpoints.
+        Note: you can use the above db record values to test the api endpoints.
 
-* Testing - Postman collection
+* Testing: Postman collection
     The postman collection consisting of the api endpoints will shared in email.
-    - Import the collection to postman.
-    - Set the authorization  from the db record values mentioned above
-    - Construct the body params, if required use the db record values mentioned above to test.
+        - Import the collection to postman.
+        - Set the authorization  from the db record values mentioned above
+        - Construct the body params, if required use the db record values mentioned above to test.
   
 
 
