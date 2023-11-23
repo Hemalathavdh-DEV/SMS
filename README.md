@@ -29,9 +29,9 @@ Things you may want to cover:
 
 * Deployment instructions
 1)   Install the Heroku CLI
-        $ heroku login
-
+        
     Push Your updated branch to heroku
+        $ heroku login
         $ git push heroku master
 
     Do Migrations
