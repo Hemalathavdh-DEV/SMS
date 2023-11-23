@@ -43,7 +43,7 @@ application up and running.
 * Heroku clone instructions
     1)  Install the Heroku CLI
     2)  If you haven't already, log in to your Heroku account and follow the prompts to create a new SSH public key.
-            $ heroku login
+            	$ heroku login
   
     3)  Clone the repository
 
