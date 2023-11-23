@@ -40,26 +40,6 @@ application up and running.
         Manual Deploy - Connect your repo, select the branch and click deploy.
 
 
-* Heroku clone instructions
-    1)  Install the Heroku CLI
-    2)  If you haven't already, log in to your Heroku account and follow the prompts to create a new SSH public key.
-            $ heroku login
-  
-    3)  Clone the repository
-
-        Use Git to clone boiling-waters-33170's source code to your local machine.
-
-        $ heroku git:clone -a boiling-waters-33170 
-        $ cd boiling-waters-33170
-
-    4)  Deploy your changes
-
-    5)  Make some changes to the code you just cloned and deploy them to Heroku using Git.
-
-        $ git add .
-        $ git commit -am "make it better"
-        $ git push heroku master
-
 * Heroku Server Details
     - URL: https://boiling-waters-33170-b06f2682c931.herokuapp.com/
     - Branch Deployed: master
@@ -68,12 +48,12 @@ application up and running.
 
 * Testing: Application and API details.
     1)  Built API endpoints:
-        Inbound SMS: "/api/v1/sms/inbound"
-        Outbound SMS: "/api/v1/sms/outbound"
+            Inbound SMS: "/api/v1/sms/inbound"
+            Outbound SMS: "/api/v1/sms/outbound"
     2)  DB records:
-        Account: <username> <password>
-        Phone numbers: <account username> <phone numbers>
-        (Account username, password, account's phone Number details shared in email.)
+            Account: <username> <password>
+            Phone numbers: <account username> <phone numbers>
+            (Account username, password, account's phone Number details shared in email.)
 
     Note: you can use the above db record values to test the api endpoints.
 
