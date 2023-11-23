@@ -39,7 +39,6 @@ application up and running.
     2) Or Select Deployment method as Github
         Manual Deploy - Connect your repo, select the branch and click deploy.
 
-
 * Heroku Server Details
     - URL: https://boiling-waters-33170-b06f2682c931.herokuapp.com/
     - Branch Deployed: master
