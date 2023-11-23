@@ -45,11 +45,10 @@ application up and running.
     - DB used in Heroku: JawsDB MySQL
     - Redis: RedisCloud
 
-* Testing: Application and API details.
-    1)  Built API endpoints
-            Inbound SMS "/api/v1/sms/inbound"
-            Outbound SMS "/api/v1/sms/outbound"
-    2)  DB records
+* Testing: Application and API details
+    1)  Built API endpoints:
+            Inbound SMS "/api/v1/sms/inbound", Outbound SMS "/api/v1/sms/outbound"
+    2)  DB records:
             Account, Phone numbers (Account username, password, account's phone Number details shared in email.)
 
     Note: you can use the above db record values to test the api endpoints.
