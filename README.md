@@ -31,3 +31,16 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+1)   Install the Heroku CLI
+
+        $ heroku login
+
+    Push Your updated branch to heroku
+        $ git push heroku master
+
+    Do Migrations
+        $ heroku run rake db:migrate
+
+2) Or Select Deployment method as Github
+    Manual Deploy - Connect your repo, select the branch and click deploy.
+

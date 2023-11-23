@@ -5,7 +5,7 @@ class Api::V1::SmsController < Api::V1::ApplicationController
 
   def inbound_sms
     processed_status = @account_service.process_text
-    return render_already_stopped if processed_status == "stopped"
+    return render_already_stopped if processed_status == STOPPED
     return render_param_valid(sms_action)
   end
 
@@ -35,7 +35,7 @@ class Api::V1::SmsController < Api::V1::ApplicationController
 
   def check_rate_limit
     result = RedisService.new(nil, params).process_and_verify_rate_limit
-    return render_request_limit_reached(params["from"]) if result == "reached"
+    return render_request_limit_reached(params["from"]) if result == REACHED
   end
 
   def sms_action
