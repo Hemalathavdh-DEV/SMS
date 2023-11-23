@@ -41,20 +41,20 @@ application up and running.
 
 
 * Heroku clone instructions
-    - Install the Heroku CLI
-    - If you haven't already, log in to your Heroku account and follow the prompts to create a new SSH public key.
-        $ heroku login
+    1)  Install the Heroku CLI
+    2)  If you haven't already, log in to your Heroku account and follow the prompts to create a new SSH public key.
+            $ heroku login
   
-    - Clone the repository
+    3)  Clone the repository
 
-    - Use Git to clone boiling-waters-33170's source code to your local machine.
+        Use Git to clone boiling-waters-33170's source code to your local machine.
 
         $ heroku git:clone -a boiling-waters-33170 
         $ cd boiling-waters-33170
 
-    - Deploy your changes
+    4)  Deploy your changes
 
-    - Make some changes to the code you just cloned and deploy them to Heroku using Git.
+    5)  Make some changes to the code you just cloned and deploy them to Heroku using Git.
 
         $ git add .
         $ git commit -am "make it better"
@@ -67,21 +67,18 @@ application up and running.
     - Redis: RedisCloud
 
 * Testing: Application and API details.
-    Built API endpoints:
+    1)  Built API endpoints:
         Inbound SMS: "/api/v1/sms/inbound"
         Outbound SMS: "/api/v1/sms/outbound"
-    DB records:
-        * Account: <username> <password>
-                - hemalatha <password>
-                - hema <password>
-            Password shared in email.
-        * Phone numbers: <account username> <phone numbers>
-            Phone Number details shared in email.
+    2)  DB records:
+        Account: <username> <password>
+        Phone numbers: <account username> <phone numbers>
+        (Account username, password, account's phone Number details shared in email.)
 
-        Note: you can use the above db record values to test the api endpoints.
+    Note: you can use the above db record values to test the api endpoints.
 
 * Testing: Postman collection
-    The postman collection consisting of the api endpoints will shared in email.
+    1)  The postman collection consisting of the api endpoints will shared in email.
         - Import the collection to postman.
         - Set the authorization  from the db record values mentioned above
         - Construct the body params, if required use the db record values mentioned above to test.
